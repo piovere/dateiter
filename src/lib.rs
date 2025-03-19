@@ -1,13 +1,13 @@
 use chrono::NaiveDate;
 use std::iter::Iterator;
 
-struct BoundedDateRange {
+pub struct BoundedDateRange {
     value: NaiveDate,
     end: NaiveDate
 }
 
 impl BoundedDateRange {
-    fn new(start: NaiveDate, end: NaiveDate) -> BoundedDateRange {
+    pub fn new(start: NaiveDate, end: NaiveDate) -> BoundedDateRange {
         BoundedDateRange { value: start, end: end }
     }
 }
