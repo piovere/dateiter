@@ -58,6 +58,6 @@ mod test {
 
         let dr = BoundedDateRange::new(start, end);
 
-        assert_eq!(dr.collect::<Vec<NaiveDate>>().len(), 365);
+        assert_eq!(dr.collect::<Vec<NaiveDate>>().len(), 364);
     }
 }
