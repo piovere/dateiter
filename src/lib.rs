@@ -37,7 +37,7 @@ mod test {
 
         let dr = BoundedDateRange::new(start, end);
 
-        assert_eq!(dr.collect::<Vec<NaiveDate>>().len(), 366); // leap year
+        assert_eq!(dr.count(), 366); // leap year
     }
 
     #[test]
@@ -58,6 +58,6 @@ mod test {
 
         let dr = BoundedDateRange::new(start, end);
 
-        assert_eq!(dr.collect::<Vec<NaiveDate>>().len(), 365);
+        assert_eq!(dr.count(), 365);
     }
 }
